@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Telephone Input Field With Country Code & Flag | Custom Dropdown List</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="select-box custom-select-box">
+            <div class="selected-option">
+                <div class="country-info">
+                    <span class="iconify" data-icon="flag:bj-4x3"></span>
+                    <strong>+229</strong>
+                </div>
+                <input type="tel" id="phone_number" class="custom-tel-input" name="tel" placeholder="Phone Number">
+            </div>
+            <div class="options custom-options">
+                <input type="text" id="search-box" class="search-box custom-search-box" placeholder="Search">
+                <ol></ol>
+            </div>
+        </div>
+        <div style="margin-top: 10px; width: 150px; height: 80px; font-size: 1.5rem">
+            <button onclick="changeCountryCodes(this)" data-country-codes="BJ,SN" provider="MTN" class="provider-button">MTN</button>
+            <button onclick="changeCountryCodes(this)" data-country-codes="SN,NG" provider="MOOV" class="provider-button">MOOV</button>
+            <button onclick="changeCountryCodes(this)" data-country-codes="GN,CD" provider="FREE" class="provider-button">FREE</button>
+            <button onclick="changeCountryCodes(this)" data-country-codes="NG,BJ" provider="ORANGE" class="provider-button">ORANGE</button>
+            <button onclick="changeCountryCodes(this)" data-country-codes="GN,BJ,CD" provider="BAXI" class="provider-button">BAXI</button>
+        </div>
+    </div>
+</body>
+
+</html>
